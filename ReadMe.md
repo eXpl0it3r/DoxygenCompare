@@ -62,10 +62,10 @@ DoxygenCompare.exe -a ../build2/doc/xml/index.xml -b ../build3/doc/xml/index.xml
 
 ## Tooling Used / Required
 
--   [Doxygen 1.9.8](https://www.doxygen.nl/)
+-   [Doxygen 1.11.0](https://www.doxygen.nl/)
 -   [.NET 8](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
 -   [XSD](https://learn.microsoft.com/en-us/dotnet/standard/serialization/xml-schema-def-tool-gen) to generate the doxygen C# class from the XSD
 
 ## License
 
-The code itself is is available under 2 licenses: Public Domain or MIT -- choose whichever you prefer, see also the license file.
+The code itself is available under 2 licenses: Public Domain or MIT -- choose whichever you prefer, see also the license file.
