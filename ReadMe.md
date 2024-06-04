@@ -52,8 +52,9 @@ DoxygenCompare.exe -a ../build2/doc/xml/index.xml -b ../build3/doc/xml/index.xml
 
 ## Enhancements
 
--   [ ] Detect properties changes
--   [ ] Detect enum changes
+-   [x] Detect attribute changes
+-   [x] Detect enum changes
+-   [ ] Detect enum value changes (filter by startsWith(refid)) - only for unchanged enums
 -   [ ] Detect function signature changes
 -   [ ] Additional automations, e.g. through GitHub Actions
 -   [ ] Different comparison result/output
