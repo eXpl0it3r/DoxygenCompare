@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="namespacelib" kind="namespace" language="C++">
+    <compoundname>lib</compoundname>
+    <innerclass refid="classlib_1_1_widget" prot="public">lib::Widget</innerclass>
+    <innerclass refid="classlib_1_1_removed" prot="public">lib::Removed</innerclass>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacelib_1a002bdc9cad690840ab1dbb6e8e797f8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lib::freeFunction</definition>
+        <argsstring>(int a)</argsstring>
+        <name>freeFunction</name>
+        <qualifiedname>lib::freeFunction</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+<para>Free function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Library.hpp" line="64" column="6" declfile="include/Library.hpp" declline="64" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Example library. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/Library.hpp" line="7" column="1"/>
+  </compounddef>
+</doxygen>

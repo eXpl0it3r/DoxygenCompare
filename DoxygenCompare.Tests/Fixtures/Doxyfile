@@ -1,0 +1,11 @@
+# Minimal configuration to generate the test fixtures, see Generate.ps1
+INPUT                  = include
+OUTPUT_DIRECTORY       = .
+RECURSIVE              = YES
+GENERATE_XML           = YES
+XML_PROGRAMLISTING     = NO
+GENERATE_HTML          = NO
+GENERATE_LATEX         = NO
+EXTRACT_ALL            = NO
+EXTRACT_PRIVATE        = NO
+QUIET                  = YES

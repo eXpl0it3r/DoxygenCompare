@@ -14,7 +14,9 @@ defaults:
         shell: bash
 
 env:
-    DOTNET_CLI_TELEMETRY_OPTOUT: 1
+    DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
+    DOTNET_NOLOGO: true
+    DOTNET_CLI_TELEMETRY_OPTOUT: true
 
 jobs:
     build:
@@ -51,10 +53,12 @@ jobs:
               run: dotnet restore
             - name: Build
               run: dotnet build --configuration Release --no-restore
+            - name: Test
+              run: dotnet test --no-build --configuration Release --verbosity normal
             - name: Publish
               env:
                   RID: ${{ matrix.platform.rid }}
-              run: dotnet publish --runtime "$RID" --self-contained --configuration Release -p:PublishReadyToRun=true -p:PublishSingleFile=true -p:PublishTrimmed=true -p:IncludeNativeLibrariesForSelfExtract=true
+              run: dotnet publish DoxygenCompare/DoxygenCompare.csproj --runtime "$RID" --self-contained --configuration Release -p:PublishReadyToRun=true -p:PublishSingleFile=true -p:PublishTrimmed=true -p:IncludeNativeLibrariesForSelfExtract=true
             - name: Upload Artifact
               uses: actions/upload-artifact@v7
               with:

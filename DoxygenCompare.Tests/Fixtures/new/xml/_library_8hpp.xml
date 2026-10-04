@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="_library_8hpp" kind="file" language="C++">
+    <compoundname>Library.hpp</compoundname>
+    <innerclass refid="classlib_1_1_widget" prot="public">lib::Widget</innerclass>
+    <innerclass refid="classlib_1_1_added" prot="public">lib::Added</innerclass>
+    <innernamespace refid="namespacelib">lib</innernamespace>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="_library_8hpp_1a8650e6793d46032c617bb7b824f90bfd" prot="public" static="no">
+        <name>LIBRARY_VERSION</name>
+        <initializer>2</initializer>
+        <briefdescription>
+<para>Library version. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Library.hpp" line="4" column="9" bodyfile="include/Library.hpp" bodystart="4" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/Library.hpp"/>
+  </compounddef>
+</doxygen>

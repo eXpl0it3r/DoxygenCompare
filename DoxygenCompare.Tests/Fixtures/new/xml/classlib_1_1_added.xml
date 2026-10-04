@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="classlib_1_1_added" kind="class" language="C++" prot="public">
+    <compoundname>lib::Added</compoundname>
+    <includes refid="_library_8hpp" local="no">Library.hpp</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlib_1_1_added_1a37ce5eda5ec5038c572612e55b532325" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lib::Added::member</definition>
+        <argsstring>()</argsstring>
+        <name>member</name>
+        <qualifiedname>lib::Added::member</qualifiedname>
+        <briefdescription>
+<para>Member of the added class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Library.hpp" line="65" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Class that got added. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/Library.hpp" line="61" column="1" bodyfile="include/Library.hpp" bodystart="62" bodyend="66"/>
+    <listofallmembers>
+      <member refid="classlib_1_1_added_1a37ce5eda5ec5038c572612e55b532325" prot="public" virt="non-virtual"><scope>lib::Added</scope><name>member</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

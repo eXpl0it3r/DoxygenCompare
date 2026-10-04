@@ -1,0 +1,266 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="classlib_1_1_widget" kind="class" language="C++" prot="public">
+    <compoundname>lib::Widget</compoundname>
+    <includes refid="_library_8hpp" local="no">Library.hpp</includes>
+    <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classlib_1_1_widget_1a976ab2be27a4f6324638f774304c5422" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>Mode</name>
+        <qualifiedname>lib::Widget::Mode</qualifiedname>
+        <enumvalue id="classlib_1_1_widget_1a976ab2be27a4f6324638f774304c5422a7fc56270e7a70fa81a5935b72eacbe29" prot="public">
+          <name>A</name>
+          <briefdescription>
+<para><ref refid="classlib_1_1_widget_1a976ab2be27a4f6324638f774304c5422" kindref="member">Mode</ref> A. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classlib_1_1_widget_1a976ab2be27a4f6324638f774304c5422a9d5ed678fe57bcca610140957afab571" prot="public">
+          <name>B</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+<para><ref refid="classlib_1_1_widget_1a976ab2be27a4f6324638f774304c5422" kindref="member">Mode</ref> B. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classlib_1_1_widget_1a976ab2be27a4f6324638f774304c5422a0d61f8370cad1d412f80b84d143e1257" prot="public">
+          <name>C</name>
+          <briefdescription>
+<para><ref refid="classlib_1_1_widget_1a976ab2be27a4f6324638f774304c5422" kindref="member">Mode</ref> C. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Drawing mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Library.hpp" line="35" column="5" bodyfile="include/Library.hpp" bodystart="36" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classlib_1_1_widget_1aceb3374dc7af30f5cca278fc1e4e83e7" prot="public" static="no">
+        <type>int</type>
+        <definition>using lib::Widget::Id = int</definition>
+        <argsstring></argsstring>
+        <name>Id</name>
+        <qualifiedname>lib::Widget::Id</qualifiedname>
+        <briefdescription>
+<para>Identifier type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Library.hpp" line="43" column="5" bodyfile="include/Library.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classlib_1_1_widget_1ac79b73fa299fdf19c07a52fa1617027f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int lib::Widget::field</definition>
+        <argsstring></argsstring>
+        <name>field</name>
+        <qualifiedname>lib::Widget::field</qualifiedname>
+        <briefdescription>
+<para>Public field. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Library.hpp" line="45" column="9" bodyfile="include/Library.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlib_1_1_widget_1a2a013e979abfe151489b0285ebda054b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>lib::Widget::Widget</definition>
+        <argsstring>()</argsstring>
+        <name>Widget</name>
+        <qualifiedname>lib::Widget::Widget</qualifiedname>
+        <briefdescription>
+<para>Construct the widget. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Library.hpp" line="14" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classlib_1_1_widget_1a01bf22dd403bf9df91366e9b921ade38" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lib::Widget::draw</definition>
+        <argsstring>(int x, int y) const</argsstring>
+        <name>draw</name>
+        <qualifiedname>lib::Widget::draw</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Draw the widget. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Library.hpp" line="17" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classlib_1_1_widget_1a3f05f16d6f004369f3c756961ba0bc1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float lib::Widget::scale</definition>
+        <argsstring>(float factor=1.f)</argsstring>
+        <name>scale</name>
+        <qualifiedname>lib::Widget::scale</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>factor</declname>
+          <defval>1.f</defval>
+        </param>
+        <briefdescription>
+<para>Scale the widget. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Library.hpp" line="20" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classlib_1_1_widget_1ab0da16f261a916acaed2a78fa0f5d583" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lib::Widget::resize</definition>
+        <argsstring>(int size)</argsstring>
+        <name>resize</name>
+        <qualifiedname>lib::Widget::resize</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Resize to a square. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Library.hpp" line="23" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classlib_1_1_widget_1a2c2e8efd5d5fb78d4480cf86340d8fb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lib::Widget::resize</definition>
+        <argsstring>(int width, int height)</argsstring>
+        <name>resize</name>
+        <qualifiedname>lib::Widget::resize</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+<para>Resize to a rectangle. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Library.hpp" line="26" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classlib_1_1_widget_1a94a2e489d32ff2357f3db6f465e4e56d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int lib::Widget::value</definition>
+        <argsstring>() const</argsstring>
+        <name>value</name>
+        <qualifiedname>lib::Widget::value</qualifiedname>
+        <briefdescription>
+<para>Get the value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Library.hpp" line="29" column="9"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classlib_1_1_widget_1a14f70ea178661271dffd4d1c5fce9535" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int lib::Widget::count</definition>
+        <argsstring>()</argsstring>
+        <name>count</name>
+        <qualifiedname>lib::Widget::count</qualifiedname>
+        <briefdescription>
+<para>Count all widgets. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Library.hpp" line="32" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classlib_1_1_widget_1a406abbc5932e85591bf7b4a15c2997e0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void lib::Widget::update</definition>
+        <argsstring>()</argsstring>
+        <name>update</name>
+        <qualifiedname>lib::Widget::update</qualifiedname>
+        <briefdescription>
+<para>Update the widget. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Library.hpp" line="49" column="18"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classlib_1_1_widget_1a3313bbf85f2df29e48a32ce2054dab79" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lib::Widget::secret</definition>
+        <argsstring>()</argsstring>
+        <name>secret</name>
+        <qualifiedname>lib::Widget::secret</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Library.hpp" line="52" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Example class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/Library.hpp" line="10" column="1" bodyfile="include/Library.hpp" bodystart="11" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classlib_1_1_widget_1a14f70ea178661271dffd4d1c5fce9535" prot="public" virt="non-virtual"><scope>lib::Widget</scope><name>count</name></member>
+      <member refid="classlib_1_1_widget_1a01bf22dd403bf9df91366e9b921ade38" prot="public" virt="non-virtual"><scope>lib::Widget</scope><name>draw</name></member>
+      <member refid="classlib_1_1_widget_1ac79b73fa299fdf19c07a52fa1617027f" prot="public" virt="non-virtual"><scope>lib::Widget</scope><name>field</name></member>
+      <member refid="classlib_1_1_widget_1aceb3374dc7af30f5cca278fc1e4e83e7" prot="public" virt="non-virtual"><scope>lib::Widget</scope><name>Id</name></member>
+      <member refid="classlib_1_1_widget_1a976ab2be27a4f6324638f774304c5422" prot="public" virt="non-virtual"><scope>lib::Widget</scope><name>Mode</name></member>
+      <member refid="classlib_1_1_widget_1ab0da16f261a916acaed2a78fa0f5d583" prot="public" virt="non-virtual"><scope>lib::Widget</scope><name>resize</name></member>
+      <member refid="classlib_1_1_widget_1a2c2e8efd5d5fb78d4480cf86340d8fb6" prot="public" virt="non-virtual"><scope>lib::Widget</scope><name>resize</name></member>
+      <member refid="classlib_1_1_widget_1a3f05f16d6f004369f3c756961ba0bc1b" prot="public" virt="non-virtual"><scope>lib::Widget</scope><name>scale</name></member>
+      <member refid="classlib_1_1_widget_1a3313bbf85f2df29e48a32ce2054dab79" prot="private" virt="non-virtual"><scope>lib::Widget</scope><name>secret</name></member>
+      <member refid="classlib_1_1_widget_1a406abbc5932e85591bf7b4a15c2997e0" prot="protected" virt="virtual"><scope>lib::Widget</scope><name>update</name></member>
+      <member refid="classlib_1_1_widget_1a94a2e489d32ff2357f3db6f465e4e56d" prot="public" virt="non-virtual"><scope>lib::Widget</scope><name>value</name></member>
+      <member refid="classlib_1_1_widget_1a2a013e979abfe151489b0285ebda054b" prot="public" virt="non-virtual"><scope>lib::Widget</scope><name>Widget</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

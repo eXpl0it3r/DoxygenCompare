@@ -1,25 +1,51 @@
-﻿using CommandLine;
+using CommandLine;
 using DoxygenCompare;
+using DoxygenCompare.Api;
+using DoxygenCompare.Comparison;
+using DoxygenCompare.Reporting;
 
-Parser.Default.ParseArguments<Options>(args)
-      .WithParsed(RunOptions);
-
-void RunOptions(Options options)
+var parser = new Parser(settings =>
 {
-    if (!File.Exists(options.FileA))
+    settings.CaseInsensitiveEnumValues = true;
+    settings.HelpWriter = Console.Error;
+});
+
+return parser.ParseArguments<Options>(args)
+             .MapResult(Run, _ => 1);
+
+static int Run(Options options)
+{
+    var surfaceOptions = new ApiSurfaceOptions
     {
-        Console.WriteLine($"Invalid file provided: {options.FileA}");
-        return;
+        IncludeProtected = !options.ExcludeProtected,
+        ExcludedNames = options.Exclude.ToList()
+    };
+
+    ApiSurface oldApi;
+    ApiSurface newApi;
+
+    try
+    {
+        oldApi = ApiSurface.Load(options.FileA, surfaceOptions);
+        newApi = ApiSurface.Load(options.FileB, surfaceOptions);
     }
-    
-    if (!File.Exists(options.FileB))
+    catch (FileNotFoundException exception)
     {
-        Console.WriteLine($"Invalid file provided: {options.FileB}");
-        return;
+        Console.Error.WriteLine(exception.Message);
+        return 1;
     }
 
-    var doxygenIndex1 = new DoxygenIndex(options.FileA);
-    var doxygenIndex2 = new DoxygenIndex(options.FileB);
+    var result = ApiComparer.Compare(oldApi, newApi, options.NameA ?? options.FileA, options.NameB ?? options.FileB);
 
-    doxygenIndex1.Compare(doxygenIndex2);
+    if (options.Output is null)
+    {
+        Reporter.Write(result, options.Format, Console.Out);
+    }
+    else
+    {
+        using var writer = new StreamWriter(options.Output);
+        Reporter.Write(result, options.Format, writer);
+    }
+
+    return 0;
 }

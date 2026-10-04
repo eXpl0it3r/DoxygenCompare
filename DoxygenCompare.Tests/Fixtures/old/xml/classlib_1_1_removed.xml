@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="classlib_1_1_removed" kind="class" language="C++" prot="public">
+    <compoundname>lib::Removed</compoundname>
+    <includes refid="_library_8hpp" local="no">Library.hpp</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlib_1_1_removed_1ac2bb7781cab61ab0c065b734deee1a43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lib::Removed::member</definition>
+        <argsstring>()</argsstring>
+        <name>member</name>
+        <qualifiedname>lib::Removed::member</qualifiedname>
+        <briefdescription>
+<para>Member of the removed class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Library.hpp" line="60" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Class that gets removed. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/Library.hpp" line="56" column="1" bodyfile="include/Library.hpp" bodystart="57" bodyend="61"/>
+    <listofallmembers>
+      <member refid="classlib_1_1_removed_1ac2bb7781cab61ab0c065b734deee1a43" prot="public" virt="non-virtual"><scope>lib::Removed</scope><name>member</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

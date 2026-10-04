@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.18.0" xml:lang="en-US">
+  <compound refid="classlib_1_1_removed" kind="class"><name>lib::Removed</name>
+    <member refid="classlib_1_1_removed_1ac2bb7781cab61ab0c065b734deee1a43" kind="function"><name>member</name></member>
+  </compound>
+  <compound refid="classlib_1_1_widget" kind="class"><name>lib::Widget</name>
+    <member refid="classlib_1_1_widget_1a976ab2be27a4f6324638f774304c5422" kind="enum"><name>Mode</name></member>
+    <member refid="classlib_1_1_widget_1a976ab2be27a4f6324638f774304c5422a7fc56270e7a70fa81a5935b72eacbe29" kind="enumvalue"><name>A</name></member>
+    <member refid="classlib_1_1_widget_1a976ab2be27a4f6324638f774304c5422a9d5ed678fe57bcca610140957afab571" kind="enumvalue"><name>B</name></member>
+    <member refid="classlib_1_1_widget_1a976ab2be27a4f6324638f774304c5422a0d61f8370cad1d412f80b84d143e1257" kind="enumvalue"><name>C</name></member>
+    <member refid="classlib_1_1_widget_1aceb3374dc7af30f5cca278fc1e4e83e7" kind="typedef"><name>Id</name></member>
+    <member refid="classlib_1_1_widget_1ac79b73fa299fdf19c07a52fa1617027f" kind="variable"><name>field</name></member>
+    <member refid="classlib_1_1_widget_1a2a013e979abfe151489b0285ebda054b" kind="function"><name>Widget</name></member>
+    <member refid="classlib_1_1_widget_1a01bf22dd403bf9df91366e9b921ade38" kind="function"><name>draw</name></member>
+    <member refid="classlib_1_1_widget_1a3f05f16d6f004369f3c756961ba0bc1b" kind="function"><name>scale</name></member>
+    <member refid="classlib_1_1_widget_1ab0da16f261a916acaed2a78fa0f5d583" kind="function"><name>resize</name></member>
+    <member refid="classlib_1_1_widget_1a2c2e8efd5d5fb78d4480cf86340d8fb6" kind="function"><name>resize</name></member>
+    <member refid="classlib_1_1_widget_1a94a2e489d32ff2357f3db6f465e4e56d" kind="function"><name>value</name></member>
+    <member refid="classlib_1_1_widget_1a14f70ea178661271dffd4d1c5fce9535" kind="function"><name>count</name></member>
+    <member refid="classlib_1_1_widget_1a406abbc5932e85591bf7b4a15c2997e0" kind="function"><name>update</name></member>
+    <member refid="classlib_1_1_widget_1a3313bbf85f2df29e48a32ce2054dab79" kind="function"><name>secret</name></member>
+  </compound>
+  <compound refid="namespacelib" kind="namespace"><name>lib</name>
+    <member refid="namespacelib_1a002bdc9cad690840ab1dbb6e8e797f8e" kind="function"><name>freeFunction</name></member>
+  </compound>
+  <compound refid="_library_8hpp" kind="file"><name>Library.hpp</name>
+    <member refid="_library_8hpp_1a8650e6793d46032c617bb7b824f90bfd" kind="define"><name>LIBRARY_VERSION</name></member>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+</doxygenindex>
