@@ -3,6 +3,15 @@
   <compound refid="classlib_1_1_added" kind="class"><name>lib::Added</name>
     <member refid="classlib_1_1_added_1a37ce5eda5ec5038c572612e55b532325" kind="function"><name>member</name></member>
   </compound>
+  <compound refid="classlib_1_1_circle" kind="class"><name>lib::Circle</name>
+    <member refid="classlib_1_1_circle_1a25f6dccd92592106af9b9ecd99aa07bb" kind="function"><name>radius</name></member>
+    <member refid="classlib_1_1_shape_1a51f6981a6677e767d1316b17c36290b9" kind="function"><name>draw</name></member>
+    <member refid="classlib_1_1_shape_1ae12a41d812ba239971bdc5133769a105" kind="function"><name>setMiterLimit</name></member>
+  </compound>
+  <compound refid="classlib_1_1_shape" kind="class"><name>lib::Shape</name>
+    <member refid="classlib_1_1_shape_1a51f6981a6677e767d1316b17c36290b9" kind="function"><name>draw</name></member>
+    <member refid="classlib_1_1_shape_1ae12a41d812ba239971bdc5133769a105" kind="function"><name>setMiterLimit</name></member>
+  </compound>
   <compound refid="classlib_1_1_widget" kind="class"><name>lib::Widget</name>
     <member refid="classlib_1_1_widget_1a976ab2be27a4f6324638f774304c5422" kind="enum"><name>Mode</name></member>
     <member refid="classlib_1_1_widget_1a976ab2be27a4f6324638f774304c5422a7fc56270e7a70fa81a5935b72eacbe29" kind="enumvalue"><name>A</name></member>

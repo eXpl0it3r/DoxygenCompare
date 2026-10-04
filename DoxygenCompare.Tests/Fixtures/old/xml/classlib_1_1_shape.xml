@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.18.0" xml:lang="en-US">
+  <compounddef id="classlib_1_1_shape" kind="class" language="C++" prot="public">
+    <compoundname>lib::Shape</compoundname>
+    <derivedcompoundref refid="classlib_1_1_circle" prot="public" virt="non-virtual">lib::Circle</derivedcompoundref>
+    <includes refid="_library_8hpp" local="no">Library.hpp</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlib_1_1_shape_1a51f6981a6677e767d1316b17c36290b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lib::Shape::draw</definition>
+        <argsstring>()</argsstring>
+        <name>draw</name>
+        <qualifiedname>lib::Shape::draw</qualifiedname>
+        <briefdescription>
+<para>Function of the base class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Library.hpp" line="68" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Base class, named so it&apos;s read after the derived class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>lib::Circle</label>
+        <link refid="classlib_1_1_circle"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>lib::Shape</label>
+        <link refid="classlib_1_1_shape"/>
+      </node>
+    </inheritancegraph>
+    <location file="include/Library.hpp" line="64" column="1" bodyfile="include/Library.hpp" bodystart="65" bodyend="69"/>
+    <listofallmembers>
+      <member refid="classlib_1_1_shape_1a51f6981a6677e767d1316b17c36290b9" prot="public" virt="non-virtual"><scope>lib::Shape</scope><name>draw</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

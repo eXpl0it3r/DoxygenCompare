@@ -4,6 +4,8 @@
     <compoundname>Library.hpp</compoundname>
     <innerclass refid="classlib_1_1_widget" prot="public">lib::Widget</innerclass>
     <innerclass refid="classlib_1_1_added" prot="public">lib::Added</innerclass>
+    <innerclass refid="classlib_1_1_shape" prot="public">lib::Shape</innerclass>
+    <innerclass refid="classlib_1_1_circle" prot="public">lib::Circle</innerclass>
     <innernamespace refid="namespacelib">lib</innernamespace>
     <sectiondef kind="define">
       <memberdef kind="define" id="_library_8hpp_1a8650e6793d46032c617bb7b824f90bfd" prot="public" static="no">

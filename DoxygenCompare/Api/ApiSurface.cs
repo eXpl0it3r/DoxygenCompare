@@ -126,9 +126,18 @@ public sealed class ApiSurface
 
     private void ReadMembers(XElement compound, string scope, string parentKey)
     {
+        var compoundId = (string?)compound.Attribute("id") ?? string.Empty;
+
         foreach (var member in compound.Elements("sectiondef").Elements("memberdef"))
         {
             var id = (string?)member.Attribute("id") ?? string.Empty;
+
+            // With INLINE_INHERITED_MEMB the base class members are copied into the derived class, but keep the
+            // base class's id, skip them here, so they're attributed to the class that actually declares them
+            if (IsInheritedMember(compoundId, id))
+            {
+                continue;
+            }
 
             if (!_seenMemberIds.Add(id) || !IsIncluded((string?)member.Attribute("prot")))
             {
@@ -373,6 +382,15 @@ public sealed class ApiSurface
         // Doxygen can list the same declaration twice, e.g. for specializations, the first one wins
         _entities.TryAdd(entity.Key, entity);
     }
+
+    // Member ids are the compound id followed by "_1" and a hash. Related functions keep their namespace id,
+    // so only members carrying the id of a different class, struct or union are inherited copies.
+    private static bool IsInheritedMember(string compoundId, string memberId) =>
+        compoundId.Length > 0 &&
+        !memberId.StartsWith(compoundId + "_1", StringComparison.Ordinal) &&
+        (memberId.StartsWith("class", StringComparison.Ordinal) ||
+         memberId.StartsWith("struct", StringComparison.Ordinal) ||
+         memberId.StartsWith("union", StringComparison.Ordinal));
 
     private bool IsIncluded(string? protection) => protection switch
     {

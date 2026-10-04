@@ -4,6 +4,8 @@
     <compoundname>lib</compoundname>
     <innerclass refid="classlib_1_1_widget" prot="public">lib::Widget</innerclass>
     <innerclass refid="classlib_1_1_removed" prot="public">lib::Removed</innerclass>
+    <innerclass refid="classlib_1_1_shape" prot="public">lib::Shape</innerclass>
+    <innerclass refid="classlib_1_1_circle" prot="public">lib::Circle</innerclass>
     <sectiondef kind="func">
       <memberdef kind="function" id="namespacelib_1a002bdc9cad690840ab1dbb6e8e797f8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -22,7 +24,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/Library.hpp" line="64" column="6" declfile="include/Library.hpp" declline="64" declcolumn="6"/>
+        <location file="include/Library.hpp" line="80" column="6" declfile="include/Library.hpp" declline="80" declcolumn="6"/>
       </memberdef>
     </sectiondef>
     <briefdescription>

@@ -8,4 +8,5 @@ GENERATE_HTML          = NO
 GENERATE_LATEX         = NO
 EXTRACT_ALL            = NO
 EXTRACT_PRIVATE        = NO
+INLINE_INHERITED_MEMB  = YES
 QUIET                  = YES

@@ -65,6 +65,25 @@ public:
     void member();
 };
 
+/// \brief Base class, named so it's read after the derived class
+class Shape
+{
+public:
+    /// \brief Function of the base class
+    void draw();
+
+    /// \brief Function added to the base class
+    void setMiterLimit(float miterLimit);
+};
+
+/// \brief Derived class
+class Circle : public Shape
+{
+public:
+    /// \brief Function of the derived class
+    float radius() const;
+};
+
 /// \brief Free function
 void freeFunction(int a) noexcept;
 } // namespace lib
